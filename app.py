@@ -166,5 +166,9 @@ def logout():
     return redirect('/')
 
 
+@app.route('/ipl')
+def ipl():
+    return render_template('ipl.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
